@@ -4,15 +4,10 @@ A Model Context Protocol (MCP) server that provides LLMs with real-time access t
 
 ## 🚀 Features
 
-- **get_account**: Fetch SOL balance, token metadata, and owner program
-- **get_transaction**: Retrieves detailed transaction execution status, logs, and instruction data
-- **get_account_transactions**: Get recent transactions for an account
-- **get_account_transfers**: Get SPL transfers for an account
-- **get_account_tokens**: Get token holdings (sorted by value)
-- **get_account_nfts**: Get NFT holdings
-- **get_account_stake_accounts**: Get stake accounts
-- **get_account_defi_activities**: Get DeFi trading history
-- **get_account_nft_activities**: Get NFT trading history
+- **Account Intelligence**: Comprehensive data on balances, transactions, transfers, and holdings (Tokens, NFTs, Stake).
+- **Market Analytics**: Track trending tokens, top lists, price data, and holder distributions.
+- **Activity History**: Deep dive into DeFi trading and NFT activities.
+- **Network Transparency**: Direct access to block details, transaction logs, and chain status.
 
 ## 📦 Installation
 
@@ -75,6 +70,15 @@ The server uses **Solscan API v2** (public endpoints) to fetch data directly, en
 | `get_account_stake_accounts`  | Get stake accounts held by a Solana account.      |
 | `get_account_defi_activities` | Get DeFi trading history of a Solana account.     |
 | `get_account_nft_activities`  | Get NFT trading history of a Solana account.      |
+| `get_token_meta`              | Get metadata of a token from Solscan.             |
+| `get_token_holders`           | Get holders of a token from Solscan.              |
+| `get_token_list`              | Get list of top tokens from Solscan.              |
+| `get_token_trending`          | Get trending tokens from Solscan.                 |
+| `get_token_price`             | Get current price of a token from Solscan.        |
+| `get_token_transfers`         | Get transfers of a token from Solscan.            |
+| `get_chain_info`              | Get current chain info (latest block/slot).       |
+| `get_block_detail`            | Get details of a specific block.                  |
+| `get_block_transactions`      | Get transactions in a specific block.             |
 
 ## License
 

@@ -97,6 +97,7 @@ export async function getAccountNftActivities(address: string, limit: number = 1
 
 export async function getAccountTokens(address: string, page: number = 1, limit: number = 10): Promise<any> {
   try {
+    
     const apiUrl = `https://api-v2.solscan.io/v2/account/positions?address=${address}&page=${page}&page_size=${limit}&sort_by=position_value&sort_order=desc`;
     console.error(`Fetching Account Positions API: ${apiUrl}`);
 

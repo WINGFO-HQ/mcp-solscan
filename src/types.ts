@@ -1,6 +1,6 @@
 export interface TransactionInfo {
   signature: string;
-  status: string;
+  status: string; 
   slot: string;
   block: string;
   fee: string;
@@ -13,6 +13,7 @@ export interface TransactionInfo {
   instructions: string[];
   logs: string;
 }
+
 
 export interface SolscanResponse {
   success: boolean;

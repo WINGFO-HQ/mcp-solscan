@@ -1,0 +1,37 @@
+{
+  "name": "mcp-solscan",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WINGFO-HQ/mcp-solscan.git"
+  },
+  "keywords": [
+    "mcp",
+    "solana",
+    "solscan",
+    "blockchain"
+  ],
+  "bugs": {
+    "url": "https://github.com/WINGFO-HQ/mcp-solscan/issues"
+  },
+  "author": "WINGFO-HQ",
+  "license": "MIT",
+  "description": "MCP server for Solscan API v2 integration - Solana blockchain explorer",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.24.1"
+  },
+  "homepage": "https://github.com/WINGFO-HQ/mcp-solscan#readme",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.2"
+  }
+}

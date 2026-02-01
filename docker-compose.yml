@@ -1,0 +1,11 @@
+services:
+  solscan-mcp:
+    build: .
+    image: solscan-mcp:latest
+    container_name: solscan-mcp
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./logs:/app/logs
+    environment:
+      - NODE_ENV=production
